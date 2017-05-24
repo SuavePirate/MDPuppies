@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Adopt Me!-->
+        <!--Adopt a Puppy-->
         <scene sceneID="vxq-hO-5Eq">
             <objects>
                 <tableViewController id="gcU-ie-Csg" customClass="PuppyTableViewController" customModule="MDPuppies" customModuleProvider="target" sceneMemberID="viewController">
@@ -60,7 +60,7 @@
                             <outlet property="delegate" destination="gcU-ie-Csg" id="xB0-TW-0LA"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Adopt Me!" id="p29-8q-dkR"/>
+                    <navigationItem key="navigationItem" title="Adopt a Puppy" id="p29-8q-dkR"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t1B-SQ-Zjd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
