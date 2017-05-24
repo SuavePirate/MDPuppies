@@ -14,8 +14,8 @@
         <scene sceneID="vxq-hO-5Eq">
             <objects>
                 <tableViewController id="gcU-ie-Csg" customClass="PuppyTableViewController" customModule="MDPuppies" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="309" sectionHeaderHeight="28" sectionFooterHeight="28" id="AZg-Gt-48o">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="320" sectionHeaderHeight="28" sectionFooterHeight="28" id="AZg-Gt-48o">
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -26,14 +26,15 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="309"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="O6r-jE-opB">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="309"/>
-                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                            <edgeInsets key="layoutMargins" top="0.0" left="0.0" bottom="0.0" right="0.0"/>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="O6r-jE-opB" customClass="MDImageCardView" customModule="MDPuppies" customModuleProvider="target">
+                                            <rect key="frame" x="8" y="15" width="359" height="280"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="359" id="G9M-bk-KrN"/>
+                                                <constraint firstAttribute="height" constant="280" id="leD-bz-Cqr"/>
+                                            </constraints>
                                         </imageView>
-                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="795-z3-0FY">
-                                            <rect key="frame" x="8" y="269" width="359" height="40"/>
-                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="795-z3-0FY">
+                                            <rect key="frame" x="8" y="255" width="359" height="40"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Puppy Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rxu-tN-ta3">
                                                     <rect key="frame" x="8" y="11" width="343" height="21"/>
@@ -45,8 +46,18 @@
                                                 </label>
                                             </subviews>
                                             <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="40" id="Vy2-yc-8y1"/>
+                                                <constraint firstAttribute="width" constant="359" id="dVL-Tr-t1C"/>
+                                            </constraints>
                                         </view>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstItem="795-z3-0FY" firstAttribute="centerX" secondItem="QCm-bU-1lz" secondAttribute="centerX" id="4TJ-Md-bgf"/>
+                                        <constraint firstItem="O6r-jE-opB" firstAttribute="centerX" secondItem="QCm-bU-1lz" secondAttribute="centerX" id="mke-SC-rDe"/>
+                                        <constraint firstItem="O6r-jE-opB" firstAttribute="centerY" secondItem="QCm-bU-1lz" secondAttribute="centerY" id="stg-ap-3wg"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="795-z3-0FY" secondAttribute="bottom" constant="6" id="tl8-VC-qiY"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="ImageView" destination="O6r-jE-opB" id="KAc-1V-ooY"/>
@@ -75,18 +86,18 @@
                         <viewControllerLayoutGuide type="bottom" id="hbE-HA-hKb"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="VLj-i8-voS">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QeR-Bb-FHS">
-                                <rect key="frame" x="0.0" y="64" width="375" height="298"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="298"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="375" id="35b-HI-EVp"/>
                                     <constraint firstAttribute="height" constant="298" id="8Do-7Q-JJc"/>
                                 </constraints>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="GRf-qe-mIw">
-                                <rect key="frame" x="16" y="382" width="343" height="207"/>
+                                <rect key="frame" x="16" y="318" width="343" height="207"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="207" id="2tk-ZR-jug"/>
@@ -95,12 +106,15 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ka0-IW-rAW">
-                                <rect key="frame" x="16" y="617" width="343" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ka0-IW-rAW" customClass="MDButton" customModule="MDPuppies" customModuleProvider="target">
+                                <rect key="frame" x="16" y="553" width="343" height="30"/>
+                                <color key="backgroundColor" red="0.77254901960784317" green="0.066666666666666666" blue="0.38431372549019605" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="Uvg-qX-SPC"/>
                                 </constraints>
-                                <state key="normal" title="Adopt Me!"/>
+                                <state key="normal" title="Adopt Me!">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -133,9 +147,15 @@
         <scene sceneID="9eS-LQ-pgl">
             <objects>
                 <navigationController id="6oV-jL-FLt" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="19X-ig-fXL">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="19X-ig-fXL" customClass="MDNavigationBar" customModule="MDPuppies" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.011764705882352941" green="0.66274509803921566" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" red="0.2627450980392157" green="0.62745098039215685" blue="0.27843137254901962" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="gcU-ie-Csg" kind="relationship" relationship="rootViewController" id="JWF-3d-Dj7"/>

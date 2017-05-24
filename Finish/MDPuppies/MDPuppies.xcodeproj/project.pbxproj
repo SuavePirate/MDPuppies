@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6671EFFC1ED62A730032B31A /* MDNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6671EFFB1ED62A730032B31A /* MDNavigationBar.swift */; };
+		6671EFFE1ED62B010032B31A /* MDButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6671EFFD1ED62B010032B31A /* MDButton.swift */; };
+		6671F0001ED62FE70032B31A /* MDImageCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6671EFFF1ED62FE70032B31A /* MDImageCardView.swift */; };
 		667CDE451ED5BA1600FEA215 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667CDE441ED5BA1600FEA215 /* AppDelegate.swift */; };
 		667CDE4A1ED5BA1600FEA215 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 667CDE481ED5BA1600FEA215 /* Main.storyboard */; };
 		667CDE4C1ED5BA1600FEA215 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 667CDE4B1ED5BA1600FEA215 /* Assets.xcassets */; };
@@ -18,6 +21,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6671EFFB1ED62A730032B31A /* MDNavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MDNavigationBar.swift; sourceTree = "<group>"; };
+		6671EFFD1ED62B010032B31A /* MDButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MDButton.swift; sourceTree = "<group>"; };
+		6671EFFF1ED62FE70032B31A /* MDImageCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MDImageCardView.swift; sourceTree = "<group>"; };
 		667CDE411ED5BA1600FEA215 /* MDPuppies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MDPuppies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		667CDE441ED5BA1600FEA215 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		667CDE491ED5BA1600FEA215 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -85,6 +91,9 @@
 			isa = PBXGroup;
 			children = (
 				667CDE5C1ED5DA2C00FEA215 /* PuppyTableViewCell.swift */,
+				6671EFFB1ED62A730032B31A /* MDNavigationBar.swift */,
+				6671EFFD1ED62B010032B31A /* MDButton.swift */,
+				6671EFFF1ED62FE70032B31A /* MDImageCardView.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -170,9 +179,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				667CDE5D1ED5DA2C00FEA215 /* PuppyTableViewCell.swift in Sources */,
+				6671F0001ED62FE70032B31A /* MDImageCardView.swift in Sources */,
 				667CDE591ED5D97C00FEA215 /* PuppyTableViewController.swift in Sources */,
 				667CDE451ED5BA1600FEA215 /* AppDelegate.swift in Sources */,
 				667CDE601ED5DC1F00FEA215 /* Puppy.swift in Sources */,
+				6671EFFE1ED62B010032B31A /* MDButton.swift in Sources */,
+				6671EFFC1ED62A730032B31A /* MDNavigationBar.swift in Sources */,
 				667CDE5B1ED5D98800FEA215 /* PuppyDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -337,6 +349,7 @@
 				667CDE551ED5BA1600FEA215 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
