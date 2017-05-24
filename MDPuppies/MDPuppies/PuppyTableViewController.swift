@@ -37,6 +37,27 @@ class PuppyTableViewController : UITableViewController{
         return puppies.count;
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        super.prepare(for: segue, sender: sender);
+        
+        guard let puppyDetailViewController = segue.destination as? PuppyDetailViewController
+            else{
+                fatalError("Unexpected segue destination");
+        }
+        guard let selectedPuppyCell = sender as? PuppyTableViewCell
+        else{
+            fatalError("Unexpected sender");
+        }
+        
+        guard let indexPath = tableView.indexPath(for: selectedPuppyCell)
+            else{
+                fatalError("Selected cell is not being displayed");
+        }
+        
+        let selectedPuppy = puppies[indexPath.row];
+        puppyDetailViewController.puppy = selectedPuppy;
+        
+    }
     func loadPuppies(){
         // load the images
         let image1 = UIImage.init(named: "puppy1.jpg");

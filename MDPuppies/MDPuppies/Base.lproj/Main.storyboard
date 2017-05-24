@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -26,12 +27,13 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="O6r-jE-opB">
-                                            <rect key="frame" x="8" y="8" width="359" height="293"/>
-                                            <autoresizingMask key="autoresizingMask"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="309"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <edgeInsets key="layoutMargins" top="0.0" left="0.0" bottom="0.0" right="0.0"/>
                                         </imageView>
                                         <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="795-z3-0FY">
-                                            <rect key="frame" x="8" y="261" width="359" height="40"/>
-                                            <autoresizingMask key="autoresizingMask"/>
+                                            <rect key="frame" x="8" y="269" width="359" height="40"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Puppy Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rxu-tN-ta3">
                                                     <rect key="frame" x="8" y="11" width="343" height="21"/>
@@ -49,6 +51,7 @@
                                 <connections>
                                     <outlet property="ImageView" destination="O6r-jE-opB" id="KAc-1V-ooY"/>
                                     <outlet property="NameLabel" destination="rxu-tN-ta3" id="AdL-eQ-nJn"/>
+                                    <segue destination="ahn-yi-Pg3" kind="show" id="3x5-Qk-YcD"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -62,6 +65,69 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t1B-SQ-Zjd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="368.80000000000001" y="-0.44977511244377816"/>
+        </scene>
+        <!--Puppy Detail View Controller-->
+        <scene sceneID="TEg-lH-u9K">
+            <objects>
+                <viewController id="ahn-yi-Pg3" customClass="PuppyDetailViewController" customModule="MDPuppies" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wBf-6k-hUl"/>
+                        <viewControllerLayoutGuide type="bottom" id="hbE-HA-hKb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="VLj-i8-voS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QeR-Bb-FHS">
+                                <rect key="frame" x="0.0" y="64" width="375" height="298"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="35b-HI-EVp"/>
+                                    <constraint firstAttribute="height" constant="298" id="8Do-7Q-JJc"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="GRf-qe-mIw">
+                                <rect key="frame" x="16" y="382" width="343" height="207"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="207" id="2tk-ZR-jug"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ka0-IW-rAW">
+                                <rect key="frame" x="16" y="617" width="343" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Uvg-qX-SPC"/>
+                                </constraints>
+                                <state key="normal" title="Adopt Me!"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="leadingMargin" secondItem="ka0-IW-rAW" secondAttribute="leading" id="Fi2-b4-a8D"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="QeR-Bb-FHS" secondAttribute="trailing" constant="-16" id="HH2-t5-ovm"/>
+                            <constraint firstItem="QeR-Bb-FHS" firstAttribute="top" secondItem="wBf-6k-hUl" secondAttribute="bottom" id="J4o-oa-Jub"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="GRf-qe-mIw" secondAttribute="trailing" id="TEn-8d-cve"/>
+                            <constraint firstItem="hbE-HA-hKb" firstAttribute="top" secondItem="ka0-IW-rAW" secondAttribute="bottom" constant="20" id="Vl2-yA-B6g"/>
+                            <constraint firstItem="QeR-Bb-FHS" firstAttribute="leading" secondItem="VLj-i8-voS" secondAttribute="leadingMargin" constant="-16" id="Y8Y-gD-Qhk"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="GRf-qe-mIw" secondAttribute="leading" id="YGd-E3-Dzz"/>
+                            <constraint firstItem="GRf-qe-mIw" firstAttribute="top" secondItem="QeR-Bb-FHS" secondAttribute="bottom" constant="20" id="ZuG-JA-EcH"/>
+                            <constraint firstItem="ka0-IW-rAW" firstAttribute="centerX" secondItem="VLj-i8-voS" secondAttribute="centerX" id="rG7-Up-YgQ"/>
+                            <constraint firstItem="QeR-Bb-FHS" firstAttribute="centerX" secondItem="VLj-i8-voS" secondAttribute="centerX" id="tlO-uC-6Ga"/>
+                            <constraint firstItem="QeR-Bb-FHS" firstAttribute="width" secondItem="VLj-i8-voS" secondAttribute="width" id="txU-TM-CLC"/>
+                            <constraint firstItem="ka0-IW-rAW" firstAttribute="top" secondItem="GRf-qe-mIw" secondAttribute="bottom" constant="28" id="yGO-5i-qDW"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="AdoptButton" destination="ka0-IW-rAW" id="Z6L-Gs-7Du"/>
+                        <outlet property="ImageView" destination="QeR-Bb-FHS" id="OrY-kD-L0e"/>
+                        <outlet property="TextView" destination="GRf-qe-mIw" id="B51-vq-kd0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eWP-0j-LOH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1288.8" y="1.3493253373313345"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="9eS-LQ-pgl">
