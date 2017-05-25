@@ -145,7 +145,7 @@
         <scene sceneID="9eS-LQ-pgl">
             <objects>
                 <navigationController id="6oV-jL-FLt" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="19X-ig-fXL" customClass="MDNavigationBar" customModule="MDPuppies" customModuleProvider="target">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="19X-ig-fXL" customClass="MDNavigationBar" customModule="MDPuppies" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="0.011764705882352941" green="0.66274509803921566" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
