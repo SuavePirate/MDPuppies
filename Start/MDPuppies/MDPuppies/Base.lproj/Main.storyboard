@@ -26,17 +26,15 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="309"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="O6r-jE-opB">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="309"/>
-                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="O6r-jE-opB">
+                                            <rect key="frame" x="11" y="1" width="354" height="293"/>
                                             <edgeInsets key="layoutMargins" top="0.0" left="0.0" bottom="0.0" right="0.0"/>
                                         </imageView>
-                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="795-z3-0FY">
-                                            <rect key="frame" x="8" y="269" width="359" height="40"/>
-                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="795-z3-0FY">
+                                            <rect key="frame" x="77" y="260" width="222" height="34"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Puppy Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rxu-tN-ta3">
-                                                    <rect key="frame" x="8" y="11" width="343" height="21"/>
+                                                    <rect key="frame" x="8" y="0.0" width="206" height="32"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -45,8 +43,20 @@
                                                 </label>
                                             </subviews>
                                             <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="222" id="BQ8-jb-nCc"/>
+                                                <constraint firstAttribute="height" constant="34" id="CLs-jh-Tzh"/>
+                                            </constraints>
                                         </view>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstItem="795-z3-0FY" firstAttribute="centerX" secondItem="O6r-jE-opB" secondAttribute="centerX" id="9t6-gA-DER"/>
+                                        <constraint firstItem="795-z3-0FY" firstAttribute="baseline" secondItem="O6r-jE-opB" secondAttribute="baseline" id="Fbm-84-gHy"/>
+                                        <constraint firstItem="O6r-jE-opB" firstAttribute="leading" secondItem="QCm-bU-1lz" secondAttribute="leadingMargin" constant="3" id="hON-L4-oiv"/>
+                                        <constraint firstItem="O6r-jE-opB" firstAttribute="top" secondItem="QCm-bU-1lz" secondAttribute="topMargin" constant="-7" id="oUD-hQ-GfS"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="O6r-jE-opB" secondAttribute="trailing" constant="2" id="v58-eG-4jo"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="O6r-jE-opB" secondAttribute="bottom" constant="7" id="w9N-SG-S18"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="ImageView" destination="O6r-jE-opB" id="KAc-1V-ooY"/>
