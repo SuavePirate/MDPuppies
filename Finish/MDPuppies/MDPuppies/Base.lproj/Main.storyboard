@@ -26,18 +26,14 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="309"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="O6r-jE-opB" customClass="MDImageCardView" customModule="MDPuppies" customModuleProvider="target">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="O6r-jE-opB" customClass="MDImageCardView" customModule="MDPuppies" customModuleProvider="target">
                                             <rect key="frame" x="8" y="15" width="359" height="280"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" constant="359" id="G9M-bk-KrN"/>
-                                                <constraint firstAttribute="height" constant="280" id="leD-bz-Cqr"/>
-                                            </constraints>
                                         </imageView>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="795-z3-0FY">
-                                            <rect key="frame" x="8" y="255" width="359" height="40"/>
+                                            <rect key="frame" x="112.5" y="255" width="150" height="40"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Puppy Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rxu-tN-ta3">
-                                                    <rect key="frame" x="8" y="11" width="343" height="21"/>
+                                                    <rect key="frame" x="8" y="11" width="134" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -48,15 +44,17 @@
                                             <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="40" id="Vy2-yc-8y1"/>
-                                                <constraint firstAttribute="width" constant="359" id="dVL-Tr-t1C"/>
+                                                <constraint firstAttribute="width" constant="150" id="dVL-Tr-t1C"/>
                                             </constraints>
                                         </view>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="795-z3-0FY" firstAttribute="centerX" secondItem="QCm-bU-1lz" secondAttribute="centerX" id="4TJ-Md-bgf"/>
-                                        <constraint firstItem="O6r-jE-opB" firstAttribute="centerX" secondItem="QCm-bU-1lz" secondAttribute="centerX" id="mke-SC-rDe"/>
-                                        <constraint firstItem="O6r-jE-opB" firstAttribute="centerY" secondItem="QCm-bU-1lz" secondAttribute="centerY" id="stg-ap-3wg"/>
+                                        <constraint firstAttribute="leadingMargin" secondItem="O6r-jE-opB" secondAttribute="leading" id="EOs-ut-Ezz"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="O6r-jE-opB" secondAttribute="trailing" id="bxl-Uv-cPO"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="795-z3-0FY" secondAttribute="bottom" constant="6" id="tl8-VC-qiY"/>
+                                        <constraint firstItem="O6r-jE-opB" firstAttribute="top" secondItem="QCm-bU-1lz" secondAttribute="topMargin" constant="7" id="tni-6Q-ehP"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="O6r-jE-opB" secondAttribute="bottom" constant="6" id="xVu-Uu-rZ4"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
